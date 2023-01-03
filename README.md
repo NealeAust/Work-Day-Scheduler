@@ -2,47 +2,49 @@
 
 ## Project Title
 
-To build a fairly basic work day scheduler with 8 time blocks from 9AM to 4PM and the current day and date displayed, this will update automatically. Each time block will automatically change color to indicate whether it is the present hour, a past hour or future hour. The user can make entries that are saved into local storage and are still vistible when webpage is refreshed.  
+To build a simple workday scheduler with 8 separate time-blocks from 9AM to 4PM. The current day and date displayed, which will update automatically. Each time-block will automatically change colour to indicate whether it is the present hour, a past hour or future hour. The user can make entries that are saved into local storage and are still visible when webpage is refreshed.  
 
-Note: The HTML and CSS code was provided, with some minor amendments required.
+ - The HTML and CSS code is provided, with some minor amendments required.
+
+ - To build this web application the jQuery, jQueryUI, Bootstrap and Day.js applications/libraries are to be used to streamline coding.
 
 ## Work Day Scheduler 
 
-The Work Day Schedular is an interactive work schedule webpage.  It enables the user to add events and track their daily tasks easily through the use of clever color coding and the ability to save entries to local storage.  These entries remain visible even when the page is refreshed. which remain visible on the webpage 
+The Work Day Scheduler is an interactive work schedule webpage. It enables the user to add events and track their daily tasks easily due to clever colour coding and the ability to save entries to local storage. User entries remain visible even when webpage is refreshed. 
 
-The Time Code Quiz webpage is an easy to complete quiz that assesses the basic JavaScript knowledge of the user and provides immediate feedback. Having been purposedly designed to meet several non-functional requirements such as, usability and accessibility. It also requires the user to answer all five questions in a timely manner, or execution of program will terminate.
- that is will default to the home page when sec===0. The 'Go Back' function allows the user, or another person can take the quiz again straight away. When all questions are answered the clock stops and the user is asked to input their initials. Their initial and score is saved into local storage. The Timed Code Quiz has been built using HTML, CSS, and JavaScript. 
+The webpage is very user friendly with a colourful and pleasant appearance. The colours of the time-block rows change automatically with a red background indicating the present hour (now), grey representing an hour that has past, and bright green indicating a future hour not yet reached. The save button is also a colourful aqua colour. 
+
+It is worth noting that the coding includes two console.log entries. These enable a user to go into the console and confirm that the hour recorded as 'now' is correct and verify that the class’s indicating, past, present and future have been updated as required. 
+
+The Work Day Scheduler has been built using HTML, CSS, and JavaScript.  Much of the JavaScript coding consists of jQuery, jQueryUI and Day.js methods. This required researching their libraries and calling these methods, as opposed to large volumes of coding.
 
 ## Project Description
 
-The objective of this project was to build a quiz to assess the users basic JavaScript knowledge and learn by redoing the quiz straight away or from another person completing the quiz.
-
-Note: A description of how to use the completed web page appears in the 'Usage' section below.
+The objective of this project was to build a workday schedule that enables a staff member to plan their day by recording meetings, appointments and/or other entries that are applicable to their role.
 
 The structure of the coding and what each section does is as follows:
 
-1. Create the array object to hold the questions, choices, and correct answer, include the answer not just its corresponding number (i.e., 3. Alerts).
+1. HTML - Set up the remaining time-blocks to ensure there are 8 separate hourly time-blocks between 9AM and 4PM.
 
-2. Set-up the home page with text and a start-quiz button to navigate to the first question.
+2. HTML - Ensure there are links to Day.js, jQuery, jQueryUI and Bootstrap.
 
-3. Display first question & four options
+3. HTML - Add a value = 9 to 16 against the 8 separate time-blocks. This  simplifies interactivity with JavaScript; importantly establishing past, present and future time-blocks and colour coding accordingly.
 
-4. Timer starts, reduces by one second from 75 seconds.
+4. JavaScript: Use coding and dayjs() to automatically display the current day and date (dddd, MMMM, d) at the top of the planner.
 
-5. When user clicks button to enter their answer program proceeds to next question:
-- If answer is correct displays the word "Correct!" and score increases by one.
+5. JavaScript: Use dayjs() to automatically return the hour 'now'.
 
-- If answer is incorrect displays the word "Incorrect" and timer reduces by 15 seconds straight away 
+6. JavaScript: Use jQuery methods and interactivity with HTML to write a conditional statement to establish if each hour in the schedule is past, present or future.
 
-6. Program loops through all five questions using i = [0], [1], [2], [3], [4].
+- This triggers a change event, which changes the colour of one or more time-block rows.
 
-7. When all questions are answered the program navigates to an end of quiz page where their score is displayed, and they are asked to enter their initials. 
+7. JavaScript - Add eventListener (.on) to save button, and jQuery methods to save time and text that has been entered into local storage.
 
-8.  Upon clicking submit button program navigates to a final page (high scores) where their initials, and score is displayed.
+- Savebtn variable declared at the top of the page.
 
-9. Their initials and score are also saved to local storage.
+8.  JavaScript – Use localStorage.getItem to ensure entries persist upon refresh of web page.
 
-10. By clicking on the 'goBack' button the program is reloaded and returns to the front page of the application, and the quiz can be repeated.
+9. Call functions
 
 ## Installation
 
@@ -50,13 +52,9 @@ N/A
 
 ## Usage
 
-The Timed-Code-Quiz Password is used to assess and improve the user’s general knowledge of JavaScript. 
+The Work Day Scheduler has a wide range of uses and benefits. Primarily it is a time management tool that helps staff to remain organised and plan their day, and where applicable help manage staff. It can avoid double booking of meetings and/or appointments and ensure the staff member does not forget an important event.
 
-To use the application the user clicks on the 'Start Quiz' button' The first question is displayed and the user clicks on the button that they believe displays the correct answer. The user then answers a total of five questions to complete the quiz. 
-
-The application has built in business rules so if the user does not complete the quiz within the specified 75 seconds the execution of program is terminated, and it returns to the front page of the application. Users are penalised 15 seconds each time they answer a question incorrectly. Each correct answer increases the score by one.
-
-If the quiz is completed within the seventy-five second timeframe the final score is displayed, the user enters their initial and clicks on the submit button to display their initial and final score, that are also placed in storage.
+To use the application the user makes an entry and clicks on the save button. The entry is subsequently saved into local storage and remains visible on the webpage even upon refresh. The automatic colour coding of the time-blocks is a clever feature that has numerous benefits, including minimising the risk of an appointment accidently being set in a timeframe that is in the past.
 
 ## Deployed Application and Screenshot
 
@@ -75,6 +73,7 @@ N/A
 ## License
 
 https://github.com/NealeAust/Work-Day-Scheduler/blob/main/LICENSE
+
 
 
 
