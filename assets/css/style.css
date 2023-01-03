@@ -1,8 +1,11 @@
+
+/* Type selector */
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
 }
 
+/* Type selector */
 textarea {
   background: transparent;
   border: none;
@@ -12,6 +15,7 @@ textarea {
   padding: 10px;
 }
 
+/* Below entries are all Class selector */
 .description {
   white-space: pre-wrap;
 }
@@ -22,6 +26,10 @@ textarea {
 
 .row {
   border-top: 1px solid white;
+}
+
+.row :hover {
+  border: 2px solid #06aed5;
 }
 
 .hour {
@@ -54,6 +62,6 @@ textarea {
 }
 
 .saveBtn i:hover {
-  font-size: 20px;
+  font-size: 30px;
   transition: all 0.3s ease-in-out;
 }
