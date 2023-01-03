@@ -43,7 +43,8 @@ function timeBlockColor() {
 // When user clicks on save button a entry in schedule is saved to local storage.
 saveBtn.on("click", function () {
 
-    var time = $(this).siblings(".hour").text();
+    var time = 
+    
     var textEntry = $(this).siblings(".description").val();
 
     localStorage.setItem(time, textEntry);

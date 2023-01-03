@@ -2,7 +2,7 @@
 
 ## Project Title
 
-To build a simple workday scheduler with 8 separate time-blocks from 9AM to 4PM. The current day and date displayed, which will update automatically. Each time-block will automatically change colour to indicate whether it is the present hour, a past hour or future hour. The user can make entries that are saved into local storage and are still visible when webpage is refreshed.  
+To build a simple workday scheduler with 8 separate time-blocks from 9AM to 4PM and the current day and date displayed at the top of the page; this will update automatically. Each time-block will automatically change colour to indicate whether it is the present hour, a past hour or future hour. The user can make entries that are saved into local storage and are still visible when webpage is refreshed.  
 
  - The HTML and CSS code is provided, with some minor amendments required.
 
@@ -16,7 +16,7 @@ The webpage is very user friendly with a colourful and pleasant appearance. The 
 
 It is worth noting that the coding includes two console.log entries. These enable a user to go into the console and confirm that the hour recorded as 'now' is correct and verify that the class’s indicating, past, present and future have been updated as required. 
 
-The Work Day Scheduler has been built using HTML, CSS, and JavaScript.  Much of the JavaScript coding consists of jQuery, jQueryUI and Day.js methods. This required researching their libraries and calling these methods, as opposed to large volumes of coding.
+The Work Day Scheduler has been built using HTML, CSS, and JavaScript. Much of the JavaScript coding consists of jQuery, jQueryUI and Day.js methods. This required researching their libraries and calling these methods, as opposed to completing a large volumes of coding.
 
 ## Project Description
 
@@ -28,13 +28,13 @@ The structure of the coding and what each section does is as follows:
 
 2. HTML - Ensure there are links to Day.js, jQuery, jQueryUI and Bootstrap.
 
-3. HTML - Add a value = 9 to 16 against the 8 separate time-blocks. This  simplifies interactivity with JavaScript; importantly establishing past, present and future time-blocks and colour coding accordingly.
+3. HTML - Add a value = 9 to 16 against the 8 separate time-blocks. This simplifies interactivity with JavaScript; importantly establishing past, present and future time-blocks and colour coding accordingly.
 
-4. JavaScript: Use coding and dayjs() to automatically display the current day and date (dddd, MMMM, d) at the top of the planner.
+4. JavaScript - Use coding and dayjs() to automatically display the current day and date (dddd, MMMM, d) at the top of the planner.
 
-5. JavaScript: Use dayjs() to automatically return the hour 'now'.
+5. JavaScript - Use dayjs() to automatically return the hour 'now'.
 
-6. JavaScript: Use jQuery methods and interactivity with HTML to write a conditional statement to establish if each hour in the schedule is past, present or future.
+6. JavaScript - Use jQuery methods and interactivity with HTML to write a conditional statement to establish if each hour in the schedule is past, present or future.
 
 - This triggers a change event, which changes the colour of one or more time-block rows.
 
@@ -52,7 +52,7 @@ N/A
 
 ## Usage
 
-The Work Day Scheduler has a wide range of uses and benefits. Primarily it is a time management tool that helps staff to remain organised and plan their day, and where applicable help manage staff. It can avoid double booking of meetings and/or appointments and ensure the staff member does not forget an important event.
+The Work Day Scheduler has a wide range of uses and benefits. Primarily it is a time management tool that helps staff to remain organised and plan their day, and where applicable help manage staff. Correct use of the scheduler will avoid double booking of meetings and/or appointments and ensure the staff member does not forget an important event.
 
 To use the application the user makes an entry and clicks on the save button. The entry is subsequently saved into local storage and remains visible on the webpage even upon refresh. The automatic colour coding of the time-blocks is a clever feature that has numerous benefits, including minimising the risk of an appointment accidently being set in a timeframe that is in the past.
 
