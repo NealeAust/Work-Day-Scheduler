@@ -62,16 +62,11 @@ If the quiz is completed within the seventy-five second timeframe the final scor
 
 ##### Link to the deployed application:
 
-Link:  
+Link:  https://nealeaust.github.io/Work-Day-Scheduler/
 
 ##### Screenshot
 
-Home page:  https://nealeaust.github.io/Work-Day-Scheduler/
-
-![image](https://user-images.githubusercontent.com/115671306/209070501-5e2c8569-ebbf-4918-987b-2919a19d3443.png)
-
-
-
+ ![image](https://user-images.githubusercontent.com/115671306/210290150-981d4425-36a5-40e8-8d1c-c6f2c8a2a620.png)
 
 ## Credits
 
